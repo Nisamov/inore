@@ -1,1 +1,2 @@
-Esto es solo un instalador personal, se irá actualizando a medida que vea que necesito más contenido en mi equipo como base
+# Repositorio Semaphore
+Este es un repositorio creaod por y para el estudio y uso de Ansible-Semaphore

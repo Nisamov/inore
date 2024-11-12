@@ -1,8 +1,8 @@
 ---
-- hosts: my_servers
-  become: true
-  tasks:
-    - name: Install Apache
-      ansible.builtin.package:
-        name: apache2
-        state: present
+  - hosts: my_servers
+    become: true
+    tasks:
+      - name: Crear archivo de prueba de conexión
+        ansible.builtin.file:
+          path: /home/ubuntu/prueba_conexion.txt
+          state: touch  

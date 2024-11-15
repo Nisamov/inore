@@ -1,5 +1,5 @@
 ---
-  - hosts: my_servers
+  - hosts: all
     become: true
     tasks:
       - name: Crear archivo de prueba de conexión

@@ -1,5 +1,5 @@
 ---
-  - hosts: all
+  - hosts: server
     become: true
     tasks:
       - name: Crear archivo de prueba de conexión

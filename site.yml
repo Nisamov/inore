@@ -1,8 +1,9 @@
 ---
-  - hosts: server
-    become: true
-    tasks:
-      - name: Crear archivo de prueba de conexión
-        ansible.builtin.file:
-          path: /home/ubuntu/prueba_conexion.txt
-          state: touch  
+- name: Ejecutar un comando Bash en los servidores de base de datos
+  hosts: server
+  become: true
+  tasks:
+    - name: Crear un archivo usando Bash
+      ansible.builtin.shell: |
+        echo "Este es un archivo de prueba" > /tmp/archivo_prueba.txt
+...
